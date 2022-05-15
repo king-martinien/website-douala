@@ -1,41 +1,56 @@
 .lieux-touristiques .intro {
   margin-bottom: 70px !important;
 }
+
 .lieux-touristiques .places {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 35px;
 }
+
 .lieux-touristiques .place {
   position: relative;
 }
+
 .lieux-touristiques .place .place-img {
   border-radius: 8px;
   overflow: hidden;
 }
+
 .lieux-touristiques .place .place-content {
   padding: 10px;
 }
+
 .lieux-touristiques .place .place-content__title {
   font-size: 24px;
   font-weight: bold;
 }
+
 .lieux-touristiques .place .localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 35px;
   height: 35px;
   border-radius: 50%;
   background-color: #FFF;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 10px;
   right: 10px;
 }
+
 .lieux-touristiques .place .localisation svg {
   width: 20px;
   height: 20px;
 }
-
-/*# sourceMappingURL=lieux%20touristiques.css.map */
+/*# sourceMappingURL=lieux touristiques.css.map */

@@ -1,1 +1,10 @@
-{"version":3,"sourceRoot":"","sources":["../scss/layouts/hotels/hotels.scss","../scss/variables/_variables.scss"],"names":[],"mappings":"AAEA;EACE;EACA;EACA;;AAEA;EALF;IAMI;;;AAGF;EAEE;IACE;;;;AASJ;EACE;EACA;;AAKA;EACE;;AAQA;EACE;EACA;;AAEA;EACE,MC5CE","file":"hotels.css"}
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,eAAe,CAAC;EACd,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAAc;EACrC,GAAG,EAAE,IAAI;CAcV;;AAZC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EALrC,AAAA,eAAe,CAAC;IAMZ,qBAAqB,EAAE,cAAc;GAWxC;;;AARC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EATtC,AAWI,eAXW,CAWX,MAAM,CAAC;IACL,cAAc,EAAE,cAAc;GAC/B;;;AAQF,AAAD,UAAK,CAAC;EACJ,aAAa,EAAE,GAAG;EAClB,QAAQ,EAAE,MAAM;CACjB;;AAIE,AAAD,mBAAQ,CAAC;EACP,SAAS,EAAE,IAAI;CAChB;;AAXL,AAkBM,MAlBA,CAcJ,KAAK,CAEH,MAAM,CAEJ,GAAG,CAAC;EACF,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CAKb;;AAzBP,AAsBQ,MAtBF,CAcJ,KAAK,CAEH,MAAM,CAEJ,GAAG,CAID,IAAI,CAAC;EACH,IAAI,EC5CF,OAAO;CD6CV",
+    "sources": [
+        "../scss/layouts/hotels/hotels.scss",
+        "../scss/variables/_variables.scss"
+    ],
+    "names": [],
+    "file": "hotels.css"
+}

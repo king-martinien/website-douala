@@ -1,7 +1,47 @@
 .restaurants {
-  border: 2px solid green;
+  background-color: rgb(245, 245, 245);
+  padding: 50px 0 100px!important;
 
-  .container {
-    border: 2px solid green;
+  .text {
+    max-width: 650px;
+    margin: 0 auto 25px !important;
+  }
+  .restaurants-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .restaurant {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    background-color: #fff;
+    .restaurant-img {
+      height: 100%;
+      overflow: hidden;
+      border-radius: 6px;
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+      }
+
+      img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        transform: scale(1);
+        transition: 0.2s ease;
+      }
+    }
+
+    @media screen and (min-width: 1240px) {
+      display: grid !important;
+      grid-template-columns: 1.5fr 2fr;
+    }
   }
 }

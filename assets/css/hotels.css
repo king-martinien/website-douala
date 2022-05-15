@@ -1,16 +1,24 @@
 .hotels-content {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
   gap: 30px;
 }
+
 @media screen and (min-width: 768px) {
   .hotels-content {
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media screen and (min-width: 1200px) {
   .hotels-content .hotel {
-    flex-direction: row !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
   }
 }
 
@@ -18,15 +26,17 @@
   border-radius: 8px;
   overflow: hidden;
 }
+
 .hotel-infos__title {
   font-size: 20px;
 }
+
 .hotel .btns button svg {
   width: 20px;
   height: 20px;
 }
+
 .hotel .btns button svg path {
   fill: #00856F;
 }
-
 /*# sourceMappingURL=hotels.css.map */
