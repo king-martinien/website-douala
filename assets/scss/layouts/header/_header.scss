@@ -1,0 +1,61 @@
+.header {
+  height: 90px;
+  z-index: 20;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+
+
+  &-container {
+    .logo {
+      width: 60px;
+    }
+
+    .navbar-menu {
+
+      .menu-item {
+        padding: 4px;
+        position: relative;
+        border-radius: 24px;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-150%, -50%);
+          width: 110%;
+          height: 105%;
+          background-color: $clr-green;
+          opacity: 0.5;
+          transition: 0.3s ease;
+          user-select: none;
+        }
+
+        &:hover {
+          font-weight: bold;
+
+          &::after {
+            transform: translate(-50%, -50%);
+          }
+
+        }
+      }
+
+      .menu-link {
+        color: $clr-green;
+        position: relative;
+        padding: inherit;
+        z-index: 20;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .navbar-menu {
+        display: none !important;
+      }
+
+      .button {
+        display: none !important;
+      }
+    }
+  }
+}

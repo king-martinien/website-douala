@@ -1,0 +1,50 @@
+.lieux-touristiques {
+
+  .intro {
+    margin-bottom: 70px !important;
+  }
+
+  .places {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 35px;
+  }
+
+  .place {
+    position: relative;
+
+    .place-img {
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .place-content {
+      padding: 10px;
+
+      &__title {
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+
+    .localisation {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: #FFF;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 10px;
+      right: 10px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+  }
+}

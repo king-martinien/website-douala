@@ -1,0 +1,11 @@
+.climat {
+  text-align: center;
+
+  @media screen and (min-width: 1024px) {
+    text-align: left;
+
+    .text {
+      max-width: 600px;
+    }
+  }
+}

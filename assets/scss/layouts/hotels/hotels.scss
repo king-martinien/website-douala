@@ -1,0 +1,50 @@
+@import "../../variables/variables";
+
+.hotels-content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: 1200px) {
+
+    .hotel {
+      flex-direction: row !important;
+    }
+  }
+
+
+}
+
+.hotel {
+
+  &-img {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  &-infos {
+
+    &__title {
+      font-size: 20px;
+    }
+  }
+
+  .btns {
+
+    button {
+
+      svg {
+        width: 20px;
+        height: 20px;
+
+        path {
+          fill: $clr-green;
+        }
+      }
+    }
+  }
+}
