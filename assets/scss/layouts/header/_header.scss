@@ -3,21 +3,86 @@
   z-index: 20;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 
-
   &-container {
     .logo {
       width: 60px;
+      position: relative;
+      z-index: 5;
+    }
+
+    .hamburger-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      background-color: $clr-green-light;
+
+      &.hamburger-active {
+        .hamburger-btn__line {
+          visibility: hidden;
+
+          &::after,
+          &::before {
+            visibility: visible;
+            background-color: #fff;
+          }
+
+          &::after {
+            transform: translateY(0) rotate(45deg);
+          }
+
+          &::before {
+            transform: translateY(0) rotate(-45deg);
+          }
+        }
+      }
+
+      &__line {
+        height: 2px;
+        position: relative;
+        background-color: $clr-green;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+
+        &::after,
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          background-color: inherit;
+          transition: 0.2s ease;
+        }
+
+        &::after {
+          transform: translateY(-0.5em) rotate(0);
+        }
+
+        &::before {
+          transform: translateY(0.5em) rotate(0);
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+        display: none;
+      }
     }
 
     .navbar-menu {
-
       .menu-item {
         padding: 4px;
         position: relative;
         border-radius: 24px;
 
         &::after {
-          content: '';
+          content: "";
           position: absolute;
           top: 50%;
           left: 50%;
@@ -36,7 +101,6 @@
           &::after {
             transform: translate(-50%, -50%);
           }
-
         }
       }
 
@@ -48,9 +112,33 @@
       }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
+
       .navbar-menu {
-        display: none !important;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $clr-green;
+        opacity: 0.9;
+
+        a {
+          color: #fff !important;
+        }
+
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: 0.2s ease;
+
+        font-size: 24px !important;
+
+        &.active {
+          transform: translateX(0);
+        }
       }
 
       .button {

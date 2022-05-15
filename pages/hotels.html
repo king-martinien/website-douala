@@ -20,20 +20,26 @@
 
 <header class="header position-fixed top-0 w-100 bg-white">
     <div class="header-container container m-auto h-100 d-flex align-items-center justify-content-between">
-        <a class="logo d-flex" href="../index.html">
+        <a class="logo d-flex" href="/index.html">
             <img alt="logo CUD Douala" src="../images/logo-douala.png">
         </a>
 
         <ul class="navbar-menu d-flex align-items-center gap-2 fw-bold h-100">
-            <li class="menu-item overflow-hidden"><a class="menu-link" href="../index.html">Accueil</a></li>
+            <li class="menu-item overflow-hidden"><a class="menu-link" href="/index.html">Accueil</a></li>
             <li class="menu-item overflow-hidden"><a class="menu-link" href="hotels.html">Hotels</a></li>
-            <li class="menu-item overflow-hidden"><a class="menu-link" href="restaurants.html">Restaurants</a></li>
+            <li class="menu-item overflow-hidden"><a class="menu-link" href="restaurants.html">Restaurants</a>
+            </li>
             <li class="menu-item overflow-hidden"><a class="menu-link" href="lieux-touristiques.html">Lieux
                 touristiques</a></li>
-            <li class="menu-item overflow-hidden"><a class="menu-link" href="quartiers-populaires.html">Quartiers Populaires</a></li>
+            <li class="menu-item overflow-hidden"><a class="menu-link" href="quartiers-populaires.html">Quartiers
+                Populaires</a></li>
         </ul>
 
-        <a class="button fw-bold" href="#">Voir la carte</a>
+        <button class="hamburger-btn">
+            <span class="hamburger-btn__line"></span>
+        </button>
+
+        <a class="button fw-bold" href="#map">Voir la carte</a>
     </div>
 </header>
 
@@ -67,12 +73,12 @@
         <div class="hotels-content">
             <div class="hotel d-flex flex-column gap-4">
                 <div class="hotel-img">
-                    <img alt="image d'un hotel" src="/images/hotels.png">
+                    <img alt="image d'un hotel" src="/images/faya.webp">
                 </div>
 
                 <div class="hotel-infos">
                     <div class="d-flex gap-2">
-                        <h3 class="hotel-infos__title fw-bold mb-1">Hotel Krystal Palace</h3>
+                        <h3 class="hotel-infos__title fw-bold mb-1">Faya Hotel</h3>
                         <div class="hotel-infos__stars">
                             <img alt="star icon" src="/images/star.svg">
                             <img alt="star icon" src="/images/star.svg">
@@ -88,8 +94,8 @@
                     </p>
 
                     <div class="btns">
-                        <button class="button">Plus d'infos</button>
-                        <button class="button">
+                        <a class="button d-inline-block" href="http://www.fayahotel.com/">Plus d'infos</a>
+                        <a class="button d-inline-block" href="https://goo.gl/maps/s8HPy2hYcVVmaNhNA">
                             <span>voir sur la carte</span>
                             <svg fill="none" height="80" viewBox="0 0 56 80" width="56"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -97,7 +103,7 @@
                                       fill="black"/>
                             </svg>
 
-                        </button>
+                        </a>
                     </div>
 
                 </div>
@@ -125,8 +131,8 @@
                     </p>
 
                     <div class="btns">
-                        <button class="button">Plus d'infos</button>
-                        <button class="button">
+                        <a class="button d-inline-block" href="http://www.krystalpalacedouala.com/">Plus d'infos</a>
+                        <a class="button d-inline-block" href="https://goo.gl/maps/UtaBmJW7RYrkADUBA">
                             <span>voir sur la carte</span>
                             <svg fill="none" height="80" viewBox="0 0 56 80" width="56"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -134,19 +140,19 @@
                                       fill="black"/>
                             </svg>
 
-                        </button>
+                        </a>
                     </div>
 
                 </div>
             </div>
             <div class="hotel d-flex flex-column gap-4">
                 <div class="hotel-img">
-                    <img alt="image d'un hotel" src="/images/hotels.png">
+                    <img alt="image d'un hotel" src="/images/libertis.webp">
                 </div>
 
                 <div class="hotel-infos">
                     <div class="d-flex gap-2">
-                        <h3 class="hotel-infos__title fw-bold mb-1">Hotel Krystal Palace</h3>
+                        <h3 class="hotel-infos__title fw-bold mb-1">Hôtel libertis</h3>
                         <div class="hotel-infos__stars">
                             <img alt="star icon" src="/images/star.svg">
                             <img alt="star icon" src="/images/star.svg">
@@ -157,13 +163,12 @@
                     </div>
 
                     <p class="hotel-infos__text mb-2">
-                        Douala. Notre hôtel est situé au coeur du quartier des affaires Akwa, à moins
-                        de 20 minutes de l'aéroport de Douala.
+                        Libertis hôtel, situé à trois (03) minutes de l'Aéroport et du GRAND MALL, est un hôtel de très
+                        haut standing.
                     </p>
 
                     <div class="btns">
-                        <button class="button">Plus d'infos</button>
-                        <button class="button">
+                        <a class="button d-inline-block" href="https://goo.gl/maps/4qAh7TgRp7Hg4qQy8">
                             <span>voir sur la carte</span>
                             <svg fill="none" height="80" viewBox="0 0 56 80" width="56"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -171,19 +176,19 @@
                                       fill="black"/>
                             </svg>
 
-                        </button>
+                        </a>
                     </div>
 
                 </div>
             </div>
             <div class="hotel d-flex flex-column gap-4">
                 <div class="hotel-img">
-                    <img alt="image d'un hotel" src="/images/hotels.png">
+                    <img alt="image d'un hotel" src="/images/safana.webp">
                 </div>
 
                 <div class="hotel-infos">
                     <div class="d-flex gap-2">
-                        <h3 class="hotel-infos__title fw-bold mb-1">Hotel Krystal Palace</h3>
+                        <h3 class="hotel-infos__title fw-bold mb-1">Saffana Hotel</h3>
                         <div class="hotel-infos__stars">
                             <img alt="star icon" src="/images/star.svg">
                             <img alt="star icon" src="/images/star.svg">
@@ -194,13 +199,12 @@
                     </div>
 
                     <p class="hotel-infos__text mb-2">
-                        Douala. Notre hôtel est situé au coeur du quartier des affaires Akwa, à moins
-                        de 20 minutes de l'aéroport de Douala.
+                        SAFFANA hôtel fournit une connexion Wi-Fi gratuite dans tous les locaux. Les chambres
+                        climatisées du SAFFANA hôtel disposent d'une télévision par satellite.
                     </p>
 
                     <div class="btns">
-                        <button class="button">Plus d'infos</button>
-                        <button class="button">
+                        <a class="button d-inline-block" href="https://goo.gl/maps/42rto6SjXKsgYpGr9">
                             <span>voir sur la carte</span>
                             <svg fill="none" height="80" viewBox="0 0 56 80" width="56"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -208,19 +212,20 @@
                                       fill="black"/>
                             </svg>
 
-                        </button>
+                        </a>
                     </div>
 
                 </div>
             </div>
+
             <div class="hotel d-flex flex-column gap-4">
                 <div class="hotel-img">
-                    <img alt="image d'un hotel" src="/images/hotels.png">
+                    <img alt="image d'un hotel" src="/images/akwa-hin.webp">
                 </div>
 
                 <div class="hotel-infos">
                     <div class="d-flex gap-2">
-                        <h3 class="hotel-infos__title fw-bold mb-1">Hotel Krystal Palace</h3>
+                        <h3 class="hotel-infos__title fw-bold mb-1">AKWA HIN DOUALA</h3>
                         <div class="hotel-infos__stars">
                             <img alt="star icon" src="/images/star.svg">
                             <img alt="star icon" src="/images/star.svg">
@@ -231,13 +236,13 @@
                     </div>
 
                     <p class="hotel-infos__text mb-2">
-                        Douala. Notre hôtel est situé au coeur du quartier des affaires Akwa, à moins
-                        de 20 minutes de l'aéroport de Douala.
+                        Akwa Hin Douala the luxury hotel suites with modern Facilities & guest facilities
+                        in Douala, Cameroon book your room now!
                     </p>
 
                     <div class="btns">
-                        <button class="button">Plus d'infos</button>
-                        <button class="button">
+                        <a class="button d-inline-block" href="https://hotelakwahin.com/">Plus d'infos</a>
+                        <a class="button d-inline-block" href="https://g.page/akwa-hin?share">
                             <span>voir sur la carte</span>
                             <svg fill="none" height="80" viewBox="0 0 56 80" width="56"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -245,21 +250,21 @@
                                       fill="black"/>
                             </svg>
 
-                        </button>
+                        </a>
                     </div>
 
                 </div>
             </div>
+
             <div class="hotel d-flex flex-column gap-4">
                 <div class="hotel-img">
-                    <img alt="image d'un hotel" src="/images/hotels.png">
+                    <img alt="image d'un hotel" src="/images/onomo.webp">
                 </div>
 
                 <div class="hotel-infos">
                     <div class="d-flex gap-2">
-                        <h3 class="hotel-infos__title fw-bold mb-1">Hotel Krystal Palace</h3>
+                        <h3 class="hotel-infos__title fw-bold mb-1">ONOMO Hotel</h3>
                         <div class="hotel-infos__stars">
-                            <img alt="star icon" src="/images/star.svg">
                             <img alt="star icon" src="/images/star.svg">
                             <img alt="star icon" src="/images/star.svg">
                             <img alt="star icon" src="/images/star.svg">
@@ -268,13 +273,13 @@
                     </div>
 
                     <p class="hotel-infos__text mb-2">
-                        Douala. Notre hôtel est situé au coeur du quartier des affaires Akwa, à moins
-                        de 20 minutes de l'aéroport de Douala.
+                        Réservez votre hôtel en plein coeur de Douala. Le ONOMO Hotel Douala offre un cadre contemporain
+                        idéal pour vous détendre en famille ou pour travailler
                     </p>
 
                     <div class="btns">
-                        <button class="button">Plus d'infos</button>
-                        <button class="button">
+                        <a class="button d-inline-block" href="http://www.onomohotel.com/">Plus d'infos</a>
+                        <a class="button d-inline-block" href="https://g.page/ONOMO-Hotel-Douala?share">
                             <span>voir sur la carte</span>
                             <svg fill="none" height="80" viewBox="0 0 56 80" width="56"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -282,21 +287,21 @@
                                       fill="black"/>
                             </svg>
 
-                        </button>
+                        </a>
                     </div>
 
                 </div>
             </div>
+
             <div class="hotel d-flex flex-column gap-4">
                 <div class="hotel-img">
-                    <img alt="image d'un hotel" src="/images/hotels.png">
+                    <img alt="image d'un hotel" src="/images/falaise.webp">
                 </div>
 
                 <div class="hotel-infos">
                     <div class="d-flex gap-2">
-                        <h3 class="hotel-infos__title fw-bold mb-1">Hotel Krystal Palace</h3>
+                        <h3 class="hotel-infos__title fw-bold mb-1">Résidence la Falaise - AKWA</h3>
                         <div class="hotel-infos__stars">
-                            <img alt="star icon" src="/images/star.svg">
                             <img alt="star icon" src="/images/star.svg">
                             <img alt="star icon" src="/images/star.svg">
                             <img alt="star icon" src="/images/star.svg">
@@ -305,35 +310,37 @@
                     </div>
 
                     <p class="hotel-infos__text mb-2">
-                        Douala. Notre hôtel est situé au coeur du quartier des affaires Akwa, à moins
-                        de 20 minutes de l'aéroport de Douala.
+                        Installé à proximité de boutiques et de restaurants, cet hôtel chic se trouve à 1 km du musée
+                        Doual'art, à 3 km de la gare de Bessengué et à 5 km de la réserve de faune de Douala-Edéa.
                     </p>
 
                     <div class="btns">
-                        <button class="button">Plus d'infos</button>
-                        <button class="button">
+                        <a class="button d-inline-block" href="http://www.hotelresidencelafalaise.com/">Plus d'infos</a>
+                        <a class="button d-inline-block" href="https://goo.gl/maps/hzAtfM2SSAiQXCNJ9">
                             <span>voir sur la carte</span>
                             <svg fill="none" height="80" viewBox="0 0 56 80" width="56"
                                  xmlns="http://www.w3.org/2000/svg">
-                                <path d="M28 0C12.52 0 0 12.52 0 28C0 49 28 80 28 80C28 80 56 49 56 28C56 12.52 43.48 0 28 0ZM28 38C22.48 38 18 33.52 18 28C18 22.48 22.48 18 28 18C33.52 18 38 22.48 38 28C38 33.52 33.52 38 28 38Z"
+                                <path d="M28 0C12.52 0 0 12.52 0 28C0 49 28 80 28 80C28 80 56 49 56 28C56
+                                12.52 43.48 0 28 0ZM28 38C22.48 38 18 33.52 18 28C18 22.48 22.48 18 28 18C33.52 18 38
+                                22.48 38 28C38 33.52 33.52 38 28 38Z"
                                       fill="black"/>
                             </svg>
 
-                        </button>
+                        </a>
                     </div>
 
                 </div>
             </div>
+
             <div class="hotel d-flex flex-column gap-4">
                 <div class="hotel-img">
-                    <img alt="image d'un hotel" src="/images/hotels.png">
+                    <img alt="image d'un hotel" src="/images/somatel.webp">
                 </div>
 
                 <div class="hotel-infos">
                     <div class="d-flex gap-2">
-                        <h3 class="hotel-infos__title fw-bold mb-1">Hotel Krystal Palace</h3>
+                        <h3 class="hotel-infos__title fw-bold mb-1">Hôtel Somatel</h3>
                         <div class="hotel-infos__stars">
-                            <img alt="star icon" src="/images/star.svg">
                             <img alt="star icon" src="/images/star.svg">
                             <img alt="star icon" src="/images/star.svg">
                             <img alt="star icon" src="/images/star.svg">
@@ -342,25 +349,28 @@
                     </div>
 
                     <p class="hotel-infos__text mb-2">
-                        Douala. Notre hôtel est situé au coeur du quartier des affaires Akwa, à moins
-                        de 20 minutes de l'aéroport de Douala.
+                        Cet hôtel standard se trouve à proximité de l'autoroute N3, à 10 minutes à pied de l'arrêt de
+                        bus le plus proche.
                     </p>
 
                     <div class="btns">
-                        <button class="button">Plus d'infos</button>
-                        <button class="button">
+                        <a class="button d-inline-block" href="http://www.somateldoualahotel.com/">Plus d'infos</a>
+                        <a class="button d-inline-block" href="https://goo.gl/maps/DBKdQ818kV7ibtwN8">
                             <span>voir sur la carte</span>
                             <svg fill="none" height="80" viewBox="0 0 56 80" width="56"
                                  xmlns="http://www.w3.org/2000/svg">
-                                <path d="M28 0C12.52 0 0 12.52 0 28C0 49 28 80 28 80C28 80 56 49 56 28C56 12.52 43.48 0 28 0ZM28 38C22.48 38 18 33.52 18 28C18 22.48 22.48 18 28 18C33.52 18 38 22.48 38 28C38 33.52 33.52 38 28 38Z"
+                                <path d="M28 0C12.52 0 0 12.52 0 28C0 49 28 80 28 80C28 80 56 49 56 28C56
+                                12.52 43.48 0 28 0ZM28 38C22.48 38 18 33.52 18 28C18 22.48 22.48 18 28 18C33.52 18 38
+                                22.48 38 28C38 33.52 33.52 38 28 38Z"
                                       fill="black"/>
                             </svg>
 
-                        </button>
+                        </a>
                     </div>
 
                 </div>
             </div>
+
         </div>
     </div>
 </div>

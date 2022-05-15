@@ -20,11 +20,28 @@
         -ms-flex-direction: row !important;
             flex-direction: row !important;
   }
+  .hotels-content .hotel-img {
+    min-width: 250px !important;
+  }
+  .hotels-content .hotel-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .hotels-content .hotel-infos {
+    min-width: 360px;
+  }
 }
 
 .hotel-img {
   border-radius: 8px;
   overflow: hidden;
+}
+
+.hotel-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .hotel-infos__title {

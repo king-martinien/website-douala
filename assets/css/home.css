@@ -14,6 +14,13 @@
   text-align: center;
 }
 
+.climat .img {
+  border-radius: 6px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
 @media screen and (min-width: 1024px) {
   .climat {
     text-align: left;
@@ -69,10 +76,24 @@
   background-color: #FFFFFF;
 }
 
+.interests-item .interests-img {
+  width: 100%;
+}
+
 .interests-item img {
   border-radius: 4px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  height: 235px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .interests-item img {
+    height: 170px;
+  }
 }
 
 .interests-item:hover img {

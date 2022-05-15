@@ -34,6 +34,7 @@
   height: 100%;
   overflow: hidden;
   border-radius: 6px;
+  max-height: 255px;
 }
 
 .restaurants .restaurant .restaurant-img:hover img {
@@ -43,6 +44,7 @@
 
 .restaurants .restaurant .restaurant-img img {
   height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center center;

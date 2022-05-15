@@ -7,36 +7,52 @@
 
   @media screen and (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media screen and (min-width: 1200px) {
 
     .hotel {
-      flex-direction: row !important;
+      
     }
   }
 
+  @media screen and (min-width: 1200px) {
+    .hotel {
+      flex-direction: row !important;
 
+      &-img {
+        min-width: 250px !important;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &-infos {
+        min-width:360px;
+      }
+    }
+  }
 }
 
 .hotel {
-
   &-img {
     border-radius: 8px;
     overflow: hidden;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &-infos {
-
     &__title {
       font-size: 20px;
     }
   }
 
   .btns {
-
     button {
-
       svg {
         width: 20px;
         height: 20px;

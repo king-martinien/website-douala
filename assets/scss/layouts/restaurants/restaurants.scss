@@ -20,10 +20,13 @@
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
     border-radius: 6px;
     background-color: #fff;
+
     .restaurant-img {
       height: 100%;
       overflow: hidden;
       border-radius: 6px;
+      max-height: 255px;
+
       &:hover {
         img {
           transform: scale(1.1);
@@ -32,6 +35,7 @@
 
       img {
         height: 100%;
+        width: 100%;
         object-fit: cover;
         object-position: center center;
         transform: scale(1);
